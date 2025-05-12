@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  josh elman
+Sudent Email:  jdelman@syr.edu
 
 ## Instructions
 
@@ -23,3 +23,6 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+
+
+In this assignment, we built a complete ETL and data visualization pipeline for analyzing parking violations in Syracuse. In etl.py, we implemented three key functions to extract and transform the dataset final_cuse_parking_violations.csv. The function top_locations() filtered and aggregated violation amounts by location where total fines exceeded \$1,000. The function top_locations_mappable() added these locations with latitude and longitude coordinates for mapping, and function tickets_in_top_locations() selected all individual ticket records issued at these top locations. Each function saved the processed results to CSV files for downstream use. The map_dashboard.py script visualizes the top fine-heavy locations using a heatmap powered by Folium and GeoPandas, with each point scaled by the total amount of violations. The location_dashboard.py script provides an interactive dashboard where users can explore ticket data by selecting a location from a dropdown. The code difficulty is moderate in this assignment.
